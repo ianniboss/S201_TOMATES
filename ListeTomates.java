@@ -51,7 +51,6 @@ public class ListeTomates {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new BorderLayout(0, 0));
 
-		// Header Panel
 		JPanel headerPanel = new JPanel();
 		headerPanel.setLayout(new BorderLayout());
 		headerPanel.setBackground(Color.WHITE);
@@ -61,24 +60,22 @@ public class ListeTomates {
 		Image scaledTitleImage = titleIcon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
 		JLabel lblTitle = new JLabel("Nos graines de tomates", new ImageIcon(scaledTitleImage), JLabel.CENTER);
 		lblTitle.setHorizontalTextPosition(SwingConstants.LEFT);
-		lblTitle.setVerticalTextPosition(SwingConstants.CENTER);		lblTitle.setFont(new Font("Poor Richard", Font.BOLD, 20));
+		lblTitle.setVerticalTextPosition(SwingConstants.CENTER);		
+		lblTitle.setFont(new Font("Poor Richard", Font.BOLD, 20));
 		lblTitle.setForeground(new Color(0, 128, 0));
 		headerPanel.add(lblTitle, BorderLayout.CENTER);
 
-		// Add icon to cart button
 		ImageIcon icon = new ImageIcon("D:\\ian\\SEM2\\S201\\programmation_SAE_S2-01_2025_GX_Y\\src\\main\\resources\\images\\pngtree-shopping-cart-convenient-icon-image_1287807.jpg"); 
 		Image image = icon.getImage().getScaledInstance(24, 24, Image.SCALE_SMOOTH);
 		btnPanier = new JButton("0,00 €", new ImageIcon(image));
 		btnPanier.setFont(new Font("Arial", Font.PLAIN, 14));
 		headerPanel.add(btnPanier, BorderLayout.EAST);
 
-		// List Panel
 		listModel = new DefaultListModel<>();
 		listTomates = new JList<>(listModel);
 		JScrollPane scrollPane = new JScrollPane(listTomates);
 		frame.getContentPane().add(scrollPane, BorderLayout.CENTER);
 
-		// Filter Panel
 		JPanel filterPanel = new JPanel();
 		filterPanel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.GREEN), "Filtres", 0, 0, new Font("Arial", Font.BOLD, 12), Color.GREEN));
 		filterPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -122,7 +119,6 @@ public class ListeTomates {
 		filterPanel.add(comboBoxCouleur);
 		frame.getContentPane().add(filterPanel, BorderLayout.SOUTH);
 
-		// Load initial data
 		loadTomates();
 		filtrerTomates();
 	}
