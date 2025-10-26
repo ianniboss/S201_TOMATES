@@ -73,22 +73,30 @@ Example JSON entry:
 - Example icon path: `src/main/resources/images/TOMATESICON.png`
 
 ## 📷 Screenshots
-- Intro
-  ![Intro](ss/intro.png)
-- Lists
-  ![Lists](ss/lists.png)
-- Description
-  ![Description](ss/desc.png)
-- Panier
-  ![Panier](ss/panier.png)
-- Coordonnées
-  ![Coordonnées](ss/coor.png)
-- Facturation
-  ![Facturation](ss/fac.png)
-- Impression
-  ![Impression](ss/imrp.png)
-- Progression
-  ![Progression](ss/progress.png)
+
+### Intro
+![Intro](ss/intro.png)
+
+### Lists
+![Lists](ss/lists.png)
+
+### Description
+![Description](ss/desc.png)
+
+### Panier
+![Panier](ss/panier.png)
+
+### Coordonnées
+![Coordonnées](ss/coor.png)
+
+### Facturation
+![Facturation](ss/fac.png)
+
+### Impression
+![Impression](ss/imrp.png)
+
+### Progression
+![Progression](ss/progress.png)
 
 ## ⚠️ Notes & Recommendations
 - Writing to classpath resources is fine in dev; for production, prefer a writable external path (e.g., `%APPDATA%/S201_TOMATES/tomatesSauvegarde.json`)
